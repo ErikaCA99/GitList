@@ -4,63 +4,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil GitHub - Erika Chino Alanoca</title>
     <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="micontenedor">
-      <div class="perfil">
+    <div class="container">
+      <div class="box-1">
         <header>
           <img
             src="/assents/ania.png"
             alt="Foto de perfil de Erika Chino"
             class="avatar"
           />
-          <h1>Erika Chino Alanoca</h1>
+          <h1 class="title">Erika Chino Alanoca</h1>
           <h3>Erika Chino</h3>
-          <button class="btn" type="button">Follow</button>
-          <button class="btnH" type="button"><i class="fas fa-heart heart"></i> Sponsor</button>
+          <button class="btn follow" type="button">Follow</button>
+          <button class="btn sponsor" type="button">
+            <i class="fas fa-heart heart"></i> Sponsor
+          </button>
           <p class="profesion">Engineer System Student</p>
           <ul class="info">
-            <li><i class="fas fa-users"></i> 4.6k Followers • 60 Following </li>
-            <li><i class="fas fa-star"></i> 81 </li>
+            <li><i class="fas fa-users"></i> 4.6k Followers • 60 Following</li>
+            <li><i class="fas fa-star"></i> 81</li>
             <li><i class="fa-solid fa-location-dot"></i> Bolivia</li>
             <li>
-              <i class="fa-solid fa-paperclip"></i><a href=""> ErikaChino.com</a>
+              <i class="fa-solid fa-paperclip"></i
+              ><a class = "url" href=""> ErikaChino.com</a>
             </li>
             <li>
-              <i class="fab fa-twitter"></i><a href="https://twitter.com/ErikaChino5"> @ErikaChino5</a>
+              <i class="fab fa-twitter"></i
+              ><a class = "url" href="https://twitter.com/ErikaChino5"> @ErikaChino5</a>
             </li>
           </ul>
         </header>
       </div>
-      <div class="repositorios">
+      <div class="box-2">
         <main>
-          <h2>Repositories</h2>
-          <input class="buscar" placeholder=" Find a repository" type="text" />
+          <h2 class="repo">Repositories</h2>
+          <section class="filtros">
+            <input class="buscar" placeholder=" Find a repository" type="text" />
+            <div class="filter">
+              <select id="type" class="select">
+                <option value="" selected enabled>Type</option>
+                <option value="public">Público</option>
+                <option value="private">Privado</option>
+                <option value="forks">Forks</option>
+              </select>
+            </div>
+            <div class="filter">
+              <select id="language" class="select">
+                <option value="" selected disabled>Language</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="css">CSS</option>
+                <option value="html">HTML</option>
+              </select>
+            </div>
+            <div class="filter">
+              <select id="sort" class="select">
+                <option value="" selected disabled>Sort</option>
+                <option value="recent">Más reciente</option>
+                <option value="stars">Más estrellas</option>
+              </select>
+            </div>
+          </section>
+
           <section class="repositorio">
             <h2><a href="#">taller-pokedex</a></h2>
             <p>La mejor Pokedex en la web</p>
             <small><i class="fas fa-star"></i> 4 • Updated: 21 horas</small>
           </section>
-    
+
           <section class="repositorio">
             <h2><a href="#">rick-and-morty-react</a></h2>
             <small><i class="fas fa-star"></i> 218 • Updated: 2 días</small>
           </section>
-    
+
           <section class="repositorio">
             <h2><a href="#">flag-project-react</a></h2>
             <p>Awesome stack, awesome project pls press the star button</p>
             <small><i class="fas fa-star"></i> 338 • Updated: 2 días</small>
           </section>
-    
+
           <section class="repositorio">
             <h2><a href="#">rock-paper-scissors-react</a></h2>
             <p>Challenge #5 from Frontend Mentor</p>
             <small><i class="fas fa-star"></i> 338 • Updated: 2 días</small>
           </section>
-    
+
           <section class="repositorio">
             <h2><a href="#">react-native-challenge</a></h2>
             <small><i class="fas fa-star"></i> 13 • Updated: 2 días</small>
@@ -68,6 +101,5 @@
         </main>
       </div>
     </div>
-
   </body>
 </html>
