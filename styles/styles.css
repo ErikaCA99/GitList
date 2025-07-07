@@ -38,6 +38,12 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.h3.titulo {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
 @media screen and (min-width: 425px) {
     .container {
         flex-direction: row;
@@ -59,8 +65,8 @@ header {
 }
 
 .avatar {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: 2px solid #30363d;
     margin-bottom: 1rem;
@@ -154,21 +160,64 @@ main {
 
 .btn.follow {
     background-color: #21262d;
-    color: #c9d1d972;
     border: 1px solid #30363d;
+    color: #fff;
 }
 
 .btn.sponsor {
     padding: 6px 16px;
     font-size: 14px;
     border-radius: 6px;
-    border: none;
+    border: 1px solid #fff;
     cursor: pointer;
     font-weight: 500;
+    background-color: #21262D;
+    color: #fff;
 }
 
 .heart {
-    color: red;
+    color: rgb(171, 91, 91);
+}
+
+.btn.star {
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    color: #fff;
+    display: flex;
+    border-width: 0.8px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14 px;
+    padding: 6px 16px;
+    margin: 15px 0px 0px;
+    text-align: center;
+}
+
+.star i {
+    margin-right: 6px;
+    
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yellow {
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.violet {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(122, 9, 122);
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .filtros {
@@ -283,14 +332,16 @@ main {
         width: 100%;
     }
 
+    
+
     .filtros {
-        flex-direction: column;
         align-items: stretch;
         gap: 10px;
         padding: 0 0 16px 0;
     }
 
     .buscar {
+        flex-direction: column;
         min-width: unset;
         width: 100%;
         margin-right: 0;
